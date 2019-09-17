@@ -1,0 +1,23 @@
+:root {
+  --player-one: red;
+  --player-two: green;
+  --stroke-width: 1;
+}
+
+body {
+    background: #000;
+    overflow: hidden;
+}
+
+#onemove rect {
+  stroke: var(--player-one);
+  stroke-width: var(--stroke-width);
+}
+
+#one rect {
+  fill: var(--player-one);
+}
+
+use[href="#onemove"]:hover rect{
+  fill: var(--player-one);
+}
